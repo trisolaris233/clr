@@ -1,0 +1,570 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+textarea {
+  padding: 5px;
+  border: 1px solid #E9E9E9;
+  width: 100%;
+  border-radius: 2px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.post-meta a,
+.post-content a,
+.widget a,
+.comment-content a {
+  border-bottom: 1px solid #EEE;
+}
+
+.post-meta a:hover,
+.post-content a:hover,
+.widget a:hover,
+.comment-content a:hover {
+  border-bottom-color: transparent;
+}
+
+.browsehappy {
+  padding: 8px 0;
+  background: #FBE3E4;
+  color: #8A1F11;
+  text-align: center;
+}
+
+.browsehappy a {
+  color: #8A1F11;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#comments {
+  padding-top: 15px;
+}
+
+.comment-list,
+.comment-list ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.comment-list li {
+  padding: 14px;
+  margin-top: 10px;
+  border: 1px solid #EEE;
+}
+
+.comment-list li.comment-level-odd {
+  background: #F6F6F3;
+}
+
+.comment-list li.comment-level-even {
+  background: #FFF;
+}
+
+.comment-list li.comment-by-author {
+  background: #FFF9E8;
+}
+
+.comment-list li .comment-reply {
+  text-align: right;
+  font-size: .92857em;
+}
+
+.comment-meta a {
+  color: #999;
+  font-size: .92857em;
+}
+
+.comment-author {
+  display: block;
+  margin-bottom: 3px;
+  color: #444;
+}
+
+.comment-author .avatar {
+  float: left;
+  margin-right: 10px;
+}
+
+.comment-author cite {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.comment-list .respond {
+  margin-top: 15px;
+  border-top: 1px solid #EEE;
+}
+
+.respond .cancel-comment-reply {
+  float: right;
+  margin-top: 15px;
+  font-size: .92857em;
+}
+
+#comment-form label {
+  display: block;
+  margin-bottom: .5em;
+  font-weight: bold;
+}
+
+#comment-form .required:after {
+  content: " *";
+  color: #C00;
+}
+
+@font-face {
+  font-family: "MJXc-TeX";
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff") format("woff"), url("https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "MJXc-TeX";
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff") format("woff"), url("https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf") format("opentype");
+  font-weight: bold
+}
+
+@font-face {
+  font-family: "MJXc-TeX";
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff") format("woff"), url("https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf") format("opentype");
+  font-style: italic
+}
+
+@font-face {
+  font-family: "MJXc-TeX";
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/woff/MathJax_Math-BoldItalic.woff") format("woff"), url("https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/fonts/HTML-CSS/TeX/otf/MathJax_Math-BoldItalic.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic
+}
+
+@font-face {
+  font-family: SourceHanSerifSC;
+  src: url("./fonts/SourceHanSerifSC-Medium.otf");
+  font-style: normal;
+}
+
+html,
+body {
+  padding: 0;
+  display: table;
+  margin: auto
+}
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  font-family: MJXc-TeX;
+  font-size: 100%;
+  line-height: 120%;
+  margin: auto;
+  background-color: #fff
+}
+
+header,
+article {
+  margin-bottom: 2em;
+  padding-left: 20px;
+  padding-right: 20px
+}
+
+footer,
+#theme-info,
+#footer-include {
+  clear: both
+}
+
+article {
+  max-width: 840px
+}
+
+body {
+  text-align: left;
+  margin: 0 auto 0 0
+}
+
+nav {
+  margin: 20px 0 0 0;
+  border-bottom: 1px solid #ccc;
+  position: relative
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0
+}
+
+nav ul li {
+  display: block;
+  margin: 0 15px 0 0;
+  padding: 3px 0 3px 0;
+  float: left;
+  position: relative;
+  border: 0
+}
+
+nav ul li a {
+  border: 0
+}
+
+p {
+  margin: 0 0 0 0;
+  text-align: justify;
+  text-justify: auto;
+  line-height: 1.5em
+}
+
+p+p {
+  text-indent: 1.5em
+}
+
+.references p+p {
+  text-indent: 0em
+}
+
+blockquote {
+  margin: 0 0 1em 0;
+  padding: 0 30px;
+  color: #808080
+}
+
+strong {
+  font-weight: bold
+}
+
+em {
+  font-style: italic
+}
+
+small {
+  font-size: 0.8em
+}
+
+sup,
+sub {
+  font-size: 0.75em
+}
+
+sup {
+  vertical-align: super
+}
+
+sub {
+  vertical-align: sub
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+  color: #ccc;
+  margin: 1em 0;
+  border: none;
+  padding: 0
+}
+
+pre,
+code,
+tt {
+  font-family: 'Monaco', 'DejaVu Sans Mono', 'Consolas', 'Courier', 'Courier New', monospace;
+  font-size: 1em;
+  line-height: 1.8;
+  color: #4d4d4d
+}
+
+pre {
+  margin: 0 0 1em 0;
+  border: 1px solid #e5e5e5;
+  padding: 0.5em 1em;
+  white-space: pre-wrap;
+  overflow: hidden;
+  background: #fafafa
+}
+
+code,
+tt {
+  background: #efefef
+}
+
+pre code,
+pre tt {
+  background: none
+}
+
+html>body code,
+html>body tt,
+html>body pre {
+  font-size: 12px
+}
+
+h3 code {
+  text-transform: none
+}
+
+ul,
+ol {
+  margin: 0 0 1em 15px;
+  padding: 0
+}
+
+ul {
+  list-style: disc
+}
+
+li {
+  line-height: 1.5em
+}
+
+ul li {
+  margin: 0 0 0.25em 0.35em
+}
+
+ol li {
+  margin: 0 0 0.25em 0.45em
+}
+
+img {
+  max-width: 800px;
+  height: auto;
+  margin: auto
+}
+
+#blog-title {
+  font-size: 2.5em;
+  font-weight: normal;
+  margin: 0;
+  border: none;
+  padding: 0;
+  line-height: 100%;
+  text-align: center
+}
+
+#blog-description {
+  text-align: center;
+}
+
+#postinfo {
+  border-bottom: 1px solid #000;
+}
+
+h1 {
+  font-size: 1.15em;
+  line-height: 3em;
+  font-weight: bold
+}
+
+#article-title {
+  font-family: SourceHanSerifSC;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  border-bottom: 1px solid #000;
+  margin-bottom: 0px
+}
+
+h2 {
+  font-size: 1.2em;
+  font-style: italic;
+  font-weight: normal
+}
+
+h3 {
+  font-size: 1.1em;
+  font-style: italic;
+  font-weight: bold
+}
+
+h4 {
+  font-size: 1em
+}
+
+h5 {
+  font-size: 0.8em
+}
+
+footer {
+  margin: 0.5em 20px 0 20px;
+  border-top: 3px double #ccc;
+  padding: 1em 0 0 0;
+  font-size: 70%;
+  color: #999
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px black dotted;
+  color: #000
+}
+
+a:hover {
+  border: 0
+}
+
+#blog-title a {
+  color: #000;
+  text-decoration: none;
+  border: 0
+}
+
+#blog-explain {
+  font-family: SourceHanSerifSC;
+  color: #000;
+  text-decoration: none;
+  border: 0;
+  text-align: center;
+}
+
+.theorem-environment {
+  color: #000;
+  padding: 0 0;
+  margin: 20px 0;
+  font-style: italic
+}
+
+.theorem-header {
+  font-weight: bold;
+  font-style: normal
+}
+
+.theorem-header .index:before {
+  content: ' '
+}
+
+.theorem-header .name:before {
+  content: ' ('
+}
+
+.theorem-header .name:after {
+  content: ')'
+}
+
+.theorem-header:after {
+  content: '.\2002\2002'
+}
+
+.theorem-header+p {
+  display: inline
+}
+
+.Proof .type {
+  font-style: italic;
+  font-weight: normal
+}
+
+.Proof {
+  padding: 0 0;
+  font-style: normal;
+  position: relative
+}
+
+.Proof:after {
+  content: '∎';
+  display: inline-block;
+  font-size: 100%;
+  bottom: 0%;
+  right: 0%;
+  position: absolute
+}
+
+.gist-file {
+  line-height: 1.2;
+  font-size: 75%
+}
+
+table.postindex {
+  max-width: 840px
+}
+
+.info {
+  margin-top: 20px;
+  color: #999
+}
+
+.info a {
+  text-decoration: none;
+  border-bottom: 1px #999 dotted;
+  color: #999
+}
+
+table.postindex td.right {
+  text-align: right
+}
+
+.header-section-number {
+  margin-right: 10px
+}
+
+.header-section-number:after {
+  content: '.'
+}
+
+table.sourceCode,
+tr.sourceCode,
+td.lineNumbers,
+td.sourceCode {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border: none
+}
+
+table.sourceCode {
+  width: 100%;
+  line-height: 100%
+}
+
+td.lineNumbers {
+  text-align: right;
+  padding-right: 4px;
+  padding-left: 4px
+}
+
+td.sourceCode {
+  padding-left: 5px
+}
+
+code>span.kw {
+  font-weight: bold
+}
+
+code>span.dt {
+  text-decoration: underline
+}
+
+code>span.co {
+  font-style: italic
+}
+
+code>span.al {
+  font-weight: bold
+}
+
+code>span.er {
+  font-weight: bold
+}
+
+dt {
+  font-weight: normal;
+  font-style: italic
+}
+
+dd {
+  margin: 0;
+  padding: 0 0 0.5em 0
+}
+
+@media print {
+  .hide-on-print {
+    display: none !important
+  }
+}
